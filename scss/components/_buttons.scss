@@ -1,0 +1,21 @@
+.main-btn-primary {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  margin-bottom: 14px;
+  font-size: 16px;
+  background-color: var(--color-primary-brands);
+  border: 2px solid transparent;
+  padding: 16px 32px;
+  border-radius: 32px;
+  transition: 0.2s ease;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+  }
+
+  &:hover {
+    color: var(--color-secondary-btns);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-brands);
+  }
+}

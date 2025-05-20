@@ -1,0 +1,18 @@
+.advantages-card {
+  padding: 24px 32px;
+  background-color: var(--main-body-);
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  border-radius: 32px;
+  text-align: center;
+  max-width: 314px;
+
+  &__icon {
+    display: block;
+    margin: 0 auto 10px;
+    fill: var(--primary-light-);
+  }
+
+  &__text {
+    line-height: 1.3;
+  }
+}

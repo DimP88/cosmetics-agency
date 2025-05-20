@@ -1,0 +1,23 @@
+.social-links {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    transition: 0.2s ease;
+  }
+
+  &__icon:hover {
+    fill: var(--color-primary-brands);
+  }
+}
+
+.links {
+  color: var(--color-primary-dark);
+  transition: 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary-brands);
+  }
+}

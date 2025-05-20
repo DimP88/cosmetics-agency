@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2 {
+  font-family: "Play", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+article {
+  position: relative;
+}
+.icons {
+  display: block;
+  margin: 0 auto 10px;
+  fill: var(--color-primary-dark);
+}

@@ -1,0 +1,128 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(1, 31, 74, 0.4);
+  padding: 20px;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 999;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  max-width: 723px;
+  width: 100%;
+  padding: 60px 10px;
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-light);
+  border-radius: 32px;
+  overflow: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__btn-close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 40px;
+    top: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &-line {
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: var(--color-primary-light);
+      transition: all 0.3s ease;
+
+      &:first-child {
+        transform: rotate(45deg);
+      }
+
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
+  }
+
+  &__text {
+    max-width: 274px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &__form {
+    max-width: 310px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__form-fields {
+    padding-bottom: 24px;
+  }
+
+  &__form-btn {
+    margin-bottom: 8px;
+    transition: 0.2s ease;
+  }
+
+  &__form-privacy {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-secondary-subtext);
+  }
+
+  &__form-privacy-link {
+    color: var(--color-secondary-subtext);
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  &__form-privacy-link:visited {
+    color: var(--color-secondary-subtext);
+  }
+}

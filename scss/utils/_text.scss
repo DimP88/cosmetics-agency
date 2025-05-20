@@ -1,0 +1,16 @@
+.decoration {
+  max-width: 529px;
+  color: var(--color-primary-brands);
+
+  &__text {
+    text-transform: capitalize;
+  }
+}
+
+.link-decorate {
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary-brands);
+  }
+}

@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  &__logo {
+    fill: var(--primary-dark-);
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.2);
+      fill: var(--primary-light-);
+    }
+  }
+
+  &__logo.footer-socials {
+    fill: var(--main-body-);
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.2);
+      fill: var(--primary-light-);
+    }
+  }
+}
