@@ -1,31 +1,5 @@
-@font-face {
-  font-display: swap;
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/Play-Regular.ttf") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/Play-Bold.ttf") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/roboto-v30-latin-regular.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/roboto-v30-latin-700.woff2") format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --color-primary-light: #ffffff;
   --color-primary-dark: #011c44;
