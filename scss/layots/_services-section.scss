@@ -10,7 +10,6 @@
       max-width: 530px;
       padding-top: 40px;
       font-size: 64px;
-      font-weight: 700;
       margin-bottom: 40px;
     }
   }
@@ -27,6 +26,11 @@
 
   &__images {
     position: relative;
+    order: 2; // По умолчанию изображения идут вторыми (на мобильных)
+
+    @media screen and (min-width: $bp-desktop) {
+      order: 2; // На десктопе остаются справа
+    }
   }
 
   &__image-left {
@@ -39,6 +43,22 @@
     position: relative;
     right: -45%;
     bottom: 0;
+  }
+
+  &__description {
+    order: 1; // По умолчанию текст идет первым (на мобильных)
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+
+    @media screen and (min-width: $bp-desktop) {
+      order: 1; // На десктопе остается слева
+
+      &.active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 
   &__description,
